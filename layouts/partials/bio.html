@@ -1,6 +1,9 @@
 {{ $avatar_img := .Site.Params.author.avatar }}
 {{ $avatar_img_alt := .Site.Params.author.name }}
 {{ $image := resources.Get $avatar_img }}
+<blockquote>
+    <p><i>"Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great." </i><strong>─Mark Twain</strong></p>
+</blockquote>
 <div class="author">
     {{ with $image }}
     {{ if eq .MediaType.SubType "svg" }}
@@ -8,7 +11,7 @@
         <image width="25em" height="25em" href="{{ $image.RelPermalink }}" />
     </svg>
     {{ else }}
-    {{ $image := $image.Fill "100x100 webp" }}
+    {{ $image := $image.Fill "200x200 webp" }}
     <img class="author-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img_alt }}" width="{{ .Width }}"
         height="{{ .Height }}" />
     {{ end }}

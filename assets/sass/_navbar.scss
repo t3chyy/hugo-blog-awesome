@@ -6,6 +6,7 @@
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
     border-bottom: 1px solid $light;
     padding: .5rem .3rem;
     @extend %clearfix;
@@ -115,7 +116,7 @@
       color: $black;
       line-height: $base-line-height + 0.4;
       text-decoration: none;
-      padding: .3rem .5rem;
+      padding: .3rem .9rem;
       opacity: 0.7;
       letter-spacing: 0.015rem;
 
